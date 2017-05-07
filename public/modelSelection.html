@@ -1,0 +1,212 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Asset/Portfolio Tracker Platform</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" src="./css/style.css">
+ 
+
+  </head>
+<body>
+
+<div class="container">
+
+        <section class="userForm">
+
+          <div class="row userForm">
+
+            <div class="col-lg-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                    <h2 class="panel-title"><span class="glyphicon glyphicon-list-alt"></span><strong>  Search & Select Your Own Model for Investment!  </strong></h2>
+                    </div>
+                        
+                <div class="panel-body">
+                  <form role="form" id="search">
+
+                    <div class="row form-row">
+                      <div class="col-xs-6">
+                        <div class="form-group">
+                            <label for="risk-T"> Risk Tolerance </label>
+                            <select class="form-control" id="sel1">
+                                <option>Low Risk Tolerance</option>
+                                <option>Medium Risk Tolerance</option>
+                                <option>High Risk Tolerance</option>
+                            </select>
+                        </div>
+                      </div>
+
+                      <div class="col-xs-6">
+                        <div class="form-group">
+                            <label for="invDuration"> Investment Duration </label>
+                            <select class="form-control" id="sel2">
+                                <option>15 Yrs</option>
+                                <option>20 Yrs</option>
+                                <option>25 Yrs</option>
+                                <option>30 Yrs</option>
+                            </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row form-row">
+                      <div class="col-xs-4">
+                        <div class="form-group">
+                            <label for="inDepo"> Initial Deposit: </label>
+                            <input class = "input form-control" required placeholder="Initial deposit" type='text'  id='depo'>
+                        </div>
+                      </div>
+
+                      <div class="col-xs-4">
+                        <div class="form-group">
+                            <label for="monthlyContri"> Monthly Contribution: </label>
+                            <input class = "input form-control" required placeholder="Monthly contribution" type='text'  id='mCon'>
+                        </div>
+                      </div>
+
+                      <div class="col-xs-4">
+                        <div class="form-group">
+                            <label for="monthlyContri"> Yearly Contribution: </label>
+                            <input class = "input form-control" required placeholder="Yearly contribution" type='text'  id='yCon'>
+                        </div>
+                      </div>
+                    </div>
+<!-- 
+                    <div class="form-group">
+                        <label for="diffrenece in stock price per unit"> Difference: </label>
+                        <input class = "input form-control" required placeholder="diffrenece in stock price per unit" type='text'  id='diffPrice'>
+                    </div>  -->                  
+  <!--                   <div class="row form-row">
+                      <div class="col-xs-4">
+                        <div class="form-group">
+                            <label for="sel1"> Price Increase by: </label>
+                              <select class="form-control" id="sel1">
+                                <option>10%</option>
+                                <option>25%</option>
+                                <option>50%</option>
+                                <option>100%</option>
+                            </select>
+                        </div>
+                      </div> -->
+
+                    <div class="row form-row">
+   
+                      <div class="col-xs-6">
+                        <div class="form-group">
+                            <label for="sel3"> E-mail Alerts: </label>
+                            <select class="form-control" id="sel2">
+                                <option>YES</option>
+                                <option>NO</option>
+                                <option>DISABLED</option>
+                            </select>
+                        </div>
+                      </div>
+                    </div>
+
+<!--                     <div class="row form-row">
+                      <div class="col-xs-4">
+                        <div class="form-group">
+                          <div class="checkbox">
+                            <label><input type="checkbox" value="delete"> Edit </label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-xs-4">
+                        <div class="form-group">
+                            <button id="delete" type="button" class="btn btn-default delete"><span class="glyphicon glyphicon-trash"></span> Delete </button>
+                        </div>
+                      </div>
+                    </div> -->
+
+
+
+                    <button id="submit" type="button" class="btn btn-default search"><span class="glyphicon glyphicon-search"></span> Search </button>
+
+                    <button id="clear" type="button" class="btn btn-default clear"><span class="glyphicon glyphicon-trash"></span> Clear Results </button> 
+
+                  </form>
+                </div>
+               </div>
+
+            </div>  
+
+        </section>
+
+        <section class="userSelection">
+
+          <div class="row marketAnalysisView">
+            
+		     <div class="col-lg-12">
+		        <div class="selectModels">
+			        <div class="panel panel-default">
+			            <div class="panel-heading">
+			            <h2 class="panel-title"><span class="glyphicon glyphicon-list-alt"></span><strong>  View Advisor's Blogs Before Investing!  </strong></h2>
+			            </div>
+			                
+			        <div class="panel-body">
+
+
+	                <div class="row">	                
+		                <form role="form" id="select">
+		                  <div class="col-lg-12">
+
+			                <div class="form-group">
+			                    <label for="select models">   Suggested Models!! </label>
+			                    <select class="form-control" id="sel1">
+			                        <option>Normal/ Low Risk Investment</option>
+			                        <option>Moderate/ Risk Investment</option>
+			                        <option>Aggressive/ High risk Investment</option>
+			                    </select>
+			                </div>
+
+			                <button id="view" type="button" class="btn btn-default view" data-toggle="modal" data-target="#myModal"> Select Models</button> 
+			                <button id="clear" type="button" class="btn btn-default view" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-trash"></span> View Models</button> 
+			              </div>
+
+		                </form>
+	                </div>
+	                </div>
+	                </div>
+	            </div>
+              </div>
+            </div>
+
+        </section>
+
+
+			  <!-- Modal -->
+			  <div class="modal fade" id="myModal" role="dialog">
+			    <div class="modal-dialog">
+			    
+			      <!-- Modal content-->
+			      <div class="modal-content">
+			        <div class="modal-header">
+			          <button type="button" class="close" data-dismiss="modal">&times;</button>
+			          <h4 class="modal-title"> Selected Models!</h4>
+			        </div>
+
+			        <div class="modal-body">
+			          <p>Some text in the modal.</p>
+			        </div>
+
+			            <button id="confirm" type="button" class="btn btn-default select"></span> Confirm </button>
+			            <button id="cancel" type="button" class="btn btn-default delete"></span> Cancel </button>
+			            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+			 	    <div class="modal-footer">
+			        </div>
+
+			      </div>
+			      
+			    </div>
+			  </div>
+			  
+
+</div>
+</body>
+</html>

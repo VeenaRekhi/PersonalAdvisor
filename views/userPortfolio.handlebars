@@ -1,0 +1,112 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Asset/Portfolio Tracker Platform</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" src="./css/style.css">
+
+  </head>
+  <body>
+
+
+<div class="container">
+
+        <section class="userPortfolio">
+
+          <div class="row">
+
+            <div class="col-lg-8">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                    <h2 class="panel-title"><span class="glyphicon glyphicon-list-alt"></span><strong>  {this.data.user_Id} Account Holder </strong></h2>
+                    </div>
+                        
+                <div class="panel-body">
+                  <form role="form" id="search">
+                  <div class="container">
+                      <h3> AccountHolder's Name: {this.data.user_name} </h3>
+                      <h3> Account Details :</h3> 
+                      <ul class="model">
+                      <li><h4> {selected model} </h4>
+                                    
+                          <div class="table-responsive table-hover">          
+                          <table class="table-stocks">
+                            <thead>
+                              <tr>
+                                <th>#</th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th>Difference </th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          </div>
+                      </li>
+
+                       <li><h4> {selected model} </h4>
+                                    
+                          <div class="table-responsive table-hover">          
+                          <table class="table-stocks">
+                            <thead>
+                              <tr>
+                                <th>#</th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th>Difference</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          </div>
+                      </li>
+                      </ul>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+
+        <section class="portfolioPerformance">
+        </section>
+
+        </div>
+
+
+</body>
+</html>
+
