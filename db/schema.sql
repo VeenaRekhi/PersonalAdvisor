@@ -12,7 +12,7 @@ CREATE TABLE user (
 );
 
 
-CREATE TABLE portfolio (
+CREATE TABLE model (
     model_id INTEGER NOT NULL AUTO_INCREMENT,
     risk_tolerance VARCHAR(25),
     investment_duration INTEGER,
@@ -21,7 +21,7 @@ CREATE TABLE portfolio (
     yearly_contribution DECIMAL (10,2),
     email_alerts VARCHAR (5),
     selected_model VARCHAR (100),
-	user_id int NOT NULL,
+	user_id INTEGER NOT NULL,
     PRIMARY KEY (model_id),
     FOREIGN KEY (user_id) REFERENCES user(user_id)
 );

@@ -1,0 +1,24 @@
+{
+  "name": "mysql-sequelize-heroku",
+  "version": "1.0.0",
+  "description": "Personal investment advisor",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VeenaRekhi/PersonalAdvisor.git"
+  },
+  "author": "Veena Rekhi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VeenaRekhi/PersonalAdvisor/issues"
+  },
+  "homepage": "https://github.com/VeenaRekhi/PersonalAdvisor#readme",
+  "dependencies": {
+    "nexmo": "^2.0.2"
+  },
+  "devDependencies": {}
+}

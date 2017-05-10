@@ -1,15 +1,14 @@
-<style>
-    /* Remove the navbar's default margin-bottom and rounded borders */ 
-    .navbar {
-      margin-bottom: 0;
-      border-radius: 0;
-    }
-    
-    /* Add a gray background color and some padding to the footer */
-    footer {
-      background-color: #f2f2f2;
-      padding: 25px;
-    }
+  /* Remove the navbar's default margin-bottom and rounded borders */ 
+  .navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+  }
+  
+  /* Add a gray background color and some padding to the footer */
+  footer {
+    background-color: #f2f2f2;
+    padding: 25px;
+  }
     
   .carousel-inner img {
       width: 100%; /* Set width to 100% */
@@ -23,3 +22,191 @@
       display: none; 
     }
   }
+
+
+/**************  CAROUSEL PAGE STRTS HERE  *************************************/
+
+body {
+          background-image: url("./img/back1.jpg");
+          font-family: "Helvetica Neue, Helvetica, Arial, sans-serif";
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+
+h2 {
+  font-size: 36px;
+}
+
+
+h3 {
+  font-size: 32px;
+}
+
+
+h4 {
+  font-size: 28px;
+}
+.well1 {
+    background-color: transparent;
+    box-shadow: 0px 16px 32px 0px rgba(0,0,0,0.2);
+    font-family: "Helvetica Neue, Helvetica, Arial, sans-serif";
+}   
+
+.well1, h2, h3 {
+    color: #20b2aa;
+
+}
+/* On small screens, set height to 'auto' for the grid */
+@media screen and (max-width: 767px) {
+.row.content {height: auto;} 
+    }
+
+.carousel-inner img {
+    width: 100%; /* Set width to 100% */
+    margin: auto;
+    min-height:200px;
+  }
+
+/* Hide the carousel text when the screen is less than 600 pixels wide */
+@media (max-width: 600px) {
+.carousel-caption {
+    display: none; 
+    }
+  }
+
+
+.well  {
+  background-color: #20b2aa;
+  box-shadow: 0px 16px 32px 0px rgba(0,0,0,0.2);
+}
+
+.well h3 {
+    color: black;
+
+}
+
+ul, li {
+      box-shadow: 0px 16px 32px 0px rgba(0,0,0,0.2);
+      font-size: 20px;
+}
+/******************* SELECTED LOCATION PAGE STRTS HERE  ***********************************/
+
+
+h3  {
+         color: solid black;
+
+    }
+
+.well1 { 
+          background: transparent;
+      }
+
+.well1 h2, h4{
+          color: solid black;
+          text-align: left;
+}
+
+
+.well { 
+          background: #20b2aa;
+      }
+
+.well h2, h3, h4{
+          color: solid black;
+}
+.row-info  {
+      
+          background-image: url( location.googleId);
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+
+.row-info ul, li {
+    font-family: "Helvetica Neue, Helvetica, Arial, sans-serif";
+    font-size: 20px;
+    text-align: left;
+    color: solid black;
+    box-shadow: 0px 16px 32px 0px rgba(0,0,0,0.2);
+
+}
+
+.difficulty-info, .rental-info, .comment.info  { 
+    font-family: "Helvetica Neue, Helvetica, Arial, sans-serif";
+    font-size: 24px;
+    box-shadow: 0px 16px 32px 0px rgba(0,0,0,0.2);
+    line-height: 35px;
+
+ }
+
+
+/************ bootstrap form starts here ************/
+
+/*form*/
+.form-control {
+            width: 75%;
+            margin: 15px;
+        };
+
+ label {
+        color: white;
+        text-align: left !important;
+    }
+
+label, 
+input[type=text],
+input[type=name],
+textarea  {
+        color: solid black;
+          display: block;
+          width: 100%;
+           }
+ 
+input[type=text],
+input[type=comments],
+textarea  {
+          height: 40px;
+          border: 1px solid #333;
+          padding: 0 20px;
+          font-size: 14px;
+           }
+
+textarea  {   
+          height: 200px;
+          }
+
+
+#submit{
+          background: #20b2aa;
+          border: 0 none;
+          color: #fff;
+          font-size: 24px;
+          padding: 10px 30px;
+          cursor: pointer;
+          }
+
+#submit:hover  {
+  color: white;
+  background-color: solid black;
+  -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+#btn-add-difficulty, #btn-add-rental, #btn-add-comment  {
+
+          background: #4185f2;
+          border: 0 none;
+          color: #fff;
+          font-size: 24px;
+          padding: 10px 30px;
+          cursor: pointer;
+          box-shadow: 0px 16px 32px 0px rgba(0,0,0,0.2);
+
+}
+
+#btn-add-difficulty:hover, #btn-add-rental:hover, #btn-add-comment:hover  {
+  color: blue;
+  background-color: solid black;
+  -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
